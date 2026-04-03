@@ -10,11 +10,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
-
 <body>
 
 <header>
-  <nav class="nav">
+ <nav class="nav">
   <div class="menu-toggle" id="menu-toggle">
     <i class="fa-solid fa-bars"></i>
   </div>
@@ -27,47 +26,41 @@
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-
 </nav>
-
 </header>
 
 
 <section id="home" class="home">
-    <div class="container">
-
-       <div class="home-content">
-        <div class="profile-image">
-         <img src="{% static 'main/images/myself.jpg' %}" alt="profile">
-        </div>
+  <div class="container">
+    <div class="home-content">
+      <div class="profile-image">
+      <img src="{% static 'main/images/myself.jpg' %}" alt="profile">
+      </div>
 
       <div class="profile-text">
-         <h2>Maricar Pordan</h2>
-         <p><strong>A passionate Computer Science student who wants to learn Web Development.</strong></p>
+        <h2>Maricar Pordan</h2>
+        <p><strong>Web Developer | CS Student</strong></p>
 
-         <div class="button">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn">Contact Me</a>
-         </div>
+        <div class="button-group">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 <section id="about" class="about">
-
     <div class="column">
   <div class="subtitle1">
           <h2>About Me</h2>
           <strong><p>I am a Computer Science student passionate about programming and technology. I enjoy building projects and improving my skills.</p></strong>
 </div>
   </div>
-
   <div class="column">
   <div class="subtitle2">
   <h3>Career Interests / Goals</h3>
-  <p>I aim to become a professional developer and create systems that solve real-world problems.</p>
-</div>
+  <strong><p>Dedicated to continuous learning and professional growth, with the ultimate goal of becoming a Lead Software Architect</p></strong></div>
 </div>
 </section>
 
@@ -75,8 +68,7 @@
 <section id="skills" class="skills">
   <h2>Skills</h2>
   <div class="skills-container">
-
-      <div>HTML</div>
+     <div>HTML</div>
     <div>CSS</div>
     <div>JavaScript</div>
     <div>Python</div>
@@ -89,66 +81,86 @@
      <h2>Projects</h2>
    <div class="project-card">
     <h3>Personal Portfolio Website</h3>
-    <p>Built using HTML and CSS and also in Pycharm.</p>
-    <a href="#">No Available</a>
+    <p>Built using HTML, CSS and also find more in W3schools</p>
+      <span class="tool-tag">
+      <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+      </span>
    </div>
 
    <div class="project-card">
     <h3>Creating Cartoon Drawing</h3>
-    <p>Using Adobe Photoshop, tools like the Brush Tool, Pen Tool, Lasso Tool, Magic wand Tool, <br>
+    <p>Using Adobe Photoshop, tools like the Brush Tool, Pen Tool, Lasso Tool, Magic wand Tool,
       Paint Bucket Tool,and Eraser Tool are used to draw, outline, select, color,
       and edit cartoon drawings.</p>
-    <a href="#">No Available</a>
+    <span class="tool-tag">
+        <a href="https://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop </a>
+      </span>
    </div>
 
    <div class="project-card">
   <h3>School Event Poster Design</h3>
   <p>Designed promotional posters for school events using Adobe Illustrator and Photoshop. Focused on color theory and layout design.</p>
-  <a href="#">No Available</a>
+  <span class="tool-tag">
+        <a href="https://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>
+      </span>
 </div>
 </section>
-
 
 <section id="education" class="education">
   <div class="education-text">
   <h2>Education</h2>
- <p><i class="fa-solid fa-school"></i> <strong>University:</strong> NORS University Negros Oriental</p>
+ <p><i class="fa-solid fa-school"></i> <strong>University:</strong> Negros Oriental, Phillipines</p>
 <p><i class="fa-solid fa-graduation-cap"></i> <strong>Program:</strong> BS Computer Science</p>
 <p><i class="fa-solid fa-calendar"></i> <strong>Year:</strong> 2024-2026 - Present</p>
 
 </div>
 </section>
 
-
 <section id="contact" class="contact">
-
   <h2>Contact Me</h2>
-<p><strong>Email:</strong> maricar5@email.com</p>
-<p><strong>Phone:</strong> 09123456789</p>
 
+  <div class="contact-info">
+    <p><i class="fa-solid fa-envelope"></i> maricar5@email.com</p>
+    <p><i class="fa-solid fa-phone"></i> 09123456789</p>
+  </div>
 
   <form class="contact-form">
-     <br>
-    <label for="fname">First name</label>
-    <input type="text" id="fname" name="firstname"><br>
-    <label for="lname">Last name</label>
-    <input type="text" id="lname" name="lastname">
-    <br>
+    <div class="form-group">
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+    </div>
+
+    <div class="form-group">
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+    </div>
+
+    <div class="form-group">
       <label for="email">Your Email</label>
-    <input type="text" id="email" name="email">
-    <button type="submit">Send</button>
+      <input type="email" id="email" name="email" placeholder="@gmail.com">
+    </div>
+
+    <button type="submit" class="send-btn">Send</button>
   </form>
 </section>
 
 <script>
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
+const links = document.querySelectorAll("#nav-links a");
+
 
 toggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+
 </script>
-
-
 </body>
 </html>
