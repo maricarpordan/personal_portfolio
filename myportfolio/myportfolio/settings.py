@@ -25,14 +25,14 @@ SECRET_KEY = 'django-insecure-+i-ar3=jl6tmvshs9i=_di26-tdxd4%z!l$w-y7*e0ee_id+(7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-# Your local changes (e.g., the ALLOWED_HOSTS fix we discussed)
-ALLOWED_HOSTS = ['maricarpordan.pythonanywhere.com',
-                 '127.0.0.1']
-=======
-# Changes from GitHub
-ALLOWED_HOSTS = ['maricarpordan.pythonanywhere.com']
->>>>>>> origin/main
+
+ALLOWED_HOSTS = [
+    'maricarpordan.pythonanywhere.com',
+    '127.0.0.1',
+    'localhost'
+]
+
+
 
 
 # Application definition
@@ -124,4 +124,8 @@ USE_TZ = True
 
 import os
 STATIC_URL = '/static/'
+<<<<<<< HEAD
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+=======
+
+>>>>>>> d6a08a8658ae6afbbaa7afa361f5ed8862b1b5d3
