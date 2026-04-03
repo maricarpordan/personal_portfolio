@@ -25,10 +25,14 @@ SECRET_KEY = 'django-insecure-+i-ar3=jl6tmvshs9i=_di26-tdxd4%z!l$w-y7*e0ee_id+(7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
+# Your local changes (e.g., the ALLOWED_HOSTS fix we discussed)
 ALLOWED_HOSTS = ['maricarpordan.pythonanywhere.com',
-                 '127.0.0.1',
-                 'localhost']
-
+                 '127.0.0.1']
+=======
+# Changes from GitHub
+ALLOWED_HOSTS = ['maricarpordan.pythonanywhere.com']
+>>>>>>> origin/main
 
 
 # Application definition
